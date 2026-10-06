@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
 llm = ChatOpenAI(
     model="openai/gpt-4o-mini",
-    api_key=os.getenv("OPENROUTER_API_KEY"),
+    api_key=st.secrets["OPENROUTER_API_KEY"],
     base_url="https://openrouter.ai/api/v1",
 )
 
